@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_note"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thêm Mới"
+        android:textColor="#1565C0"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề"
+        android:textColor="#1E88E5"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_dialog_add_note"
+        android:lines="2"
+        android:padding="15dp"
+        android:textColor="#64B5F6"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Nội dung"
+        android:textColor="#1E88E5"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_dialog_add_note"
+        android:gravity="top"
+        android:lines="6"
+        android:padding="15dp"
+        android:textColor="#64B5F6"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAdd"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_dialog_add_note"
+        android:padding="15dp"
+        android:text="Thêm"
+        android:textColor="@color/white"
+        app:backgroundTint="#1565C0" />
+</LinearLayout>
